@@ -1,5 +1,9 @@
 @import 'flex-layout'
 
+.blog-link
+		color: $gold-300
+		text-transform: uppercase
+
 
 header
 	text-transform: uppercase
@@ -27,10 +31,45 @@ article
 	
 	header
 		text-transform: none
-	header p,footer p
-		color: $gold-300
-		text-transform: uppercase
+	
+	
+.blog-posts
+	@extend %flex-col
+	align-items: center
 
+	.blog-row
+		@extend %flex-row
+		justify-content: center
+		flex-wrap: wrap
 
-		
+	
+		.blog
+			@extend %flex-col
+			align-items: center
+			flex: 0 1 48%
+			margin-right: 10px
+			p
+
+			h2 + p
+				padding: 0 10px
+
+.cta-signup
+	@extend %flex-col
+	width: 100%
+	padding: 100px 0
+	align-items: center
+	justify-content: center
+	background: $grey-300
+
+	input
+		margin: 20px 0
+		border: none
+		background: transparent
+		border-bottom: 1px solid transparentize($grey-500,.5)
+		font-size: 1.8rem
+		width: 20vw
+
+		&:focus
+			outline: none
+
 		
