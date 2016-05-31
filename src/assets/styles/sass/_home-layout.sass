@@ -36,6 +36,7 @@ article
 .blog-posts
 	@extend %flex-col
 	align-items: center
+	flex-wrap: wrap
 
 	.blog-row
 		@extend %flex-row
@@ -48,8 +49,7 @@ article
 			align-items: center
 			flex: 0 1 48%
 			margin-right: 10px
-			p
-
+			
 			h2 + p
 				padding: 0 10px
 
@@ -71,5 +71,76 @@ article
 
 		&:focus
 			outline: none
+
+.extra
+	padding: 20px 0
+
+.cta-more
+	@extend %flex-row
+	justify-content: center
+	padding: 20px 0
+
+	button
+		background: none
+		border: none
+		font-size: 2.2rem
+		border: 1px solid $grey-500
+		padding: 8px 15px
+		text-transform: capitalize
+		cursor: pointer
+		box-shadow: 1px 2px 2px transparentize($grey-500,.5)
+		border-radius: 4px
+
+		&:focus
+			outline: none
+
+		&:active
+			box-shadow: none
+
+footer
+	background: $grey-300
+	@extend %flex-row
+	justify-content: space-around
+	align-items: center
+	
+	.legal
+		@extend %flex-row
+		align-items: space-between
+		p
+			padding: 10px
+	
+	.social-media
+		@extend .legal
+		a
+			padding: 10px
+
+			&:last-child
+				padding: 10px 0
+				
+
+
+@media (max-width: 400px)
+	header
+		padding: 0 15px
+	h1
+		font-size: 2.5rem
+
+	h2
+		font-size: 1.9rem
+
+	p
+		font-size: 1.2rem
+		
+	.blog-posts
+		.blog-row
+			.blog
+				margin: 0
+				flex: 0 100%
+				img
+					width: 200px
+					h2 + p
+						padding: 0
+
+
 
 		
