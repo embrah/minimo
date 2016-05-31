@@ -34,7 +34,7 @@ a {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -55,7 +55,7 @@ ul {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -95,7 +95,8 @@ article {
     text-transform: none; }
 
 .blog-posts {
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .blog-posts .blog-row {
     justify-content: center;
     flex-wrap: wrap; }
@@ -121,3 +122,54 @@ article {
     width: 20vw; }
     .cta-signup input:focus {
       outline: none; }
+
+.extra {
+  padding: 20px 0; }
+
+.cta-more {
+  justify-content: center;
+  padding: 20px 0; }
+  .cta-more button {
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    border: 1px solid #626262;
+    padding: 8px 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px rgba(98, 98, 98, 0.5);
+    border-radius: 4px; }
+    .cta-more button:focus {
+      outline: none; }
+    .cta-more button:active {
+      box-shadow: none; }
+
+footer {
+  background: #f0f0f0;
+  justify-content: space-around;
+  align-items: center; }
+  footer .legal, footer .social-media {
+    align-items: space-between; }
+    footer .legal p, footer .social-media p {
+      padding: 10px; }
+  footer .social-media a {
+    padding: 10px; }
+    footer .social-media a:last-child {
+      padding: 10px 0; }
+
+@media (max-width: 400px) {
+  header {
+    padding: 0 15px; }
+  h1 {
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 1.9rem; }
+  p {
+    font-size: 1.2rem; }
+  .blog-posts .blog-row .blog {
+    margin: 0;
+    flex: 0 100%; }
+    .blog-posts .blog-row .blog img {
+      width: 200px; }
+      .blog-posts .blog-row .blog img h2 + p {
+        padding: 0; } }
