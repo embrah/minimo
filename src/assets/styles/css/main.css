@@ -172,4 +172,11 @@ footer {
     .blog-posts .blog-row .blog img {
       width: 200px; }
       .blog-posts .blog-row .blog img h2 + p {
-        padding: 0; } }
+        padding: 0; }
+  .cta-signup h1 {
+    font-size: 2rem; }
+  .cta-signup input {
+    width: 50vw;
+    font-size: 1.5rem; }
+  footer {
+    flex-flow: column wrap; } }
