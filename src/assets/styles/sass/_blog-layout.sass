@@ -1,0 +1,52 @@
+@import 'flex-layout'
+@import 'home-layout'
+
+
+img:not(.logo)
+	width: 100%
+
+.post
+	@extend %flex-col
+
+	article
+		@extend %flex-col
+		.blog-gallery
+			@extend %flex-col
+			align-self: center
+			width: 80%
+			.blog-pic
+				margin: 10px 0
+
+		.quote
+			font-style: italic
+			padding: 0 50px
+		footer
+			background: none
+			justify-content: flex-end
+			.share
+				text-transform: uppercase
+				color: $gold-300
+				@extend %flex-row
+				justify-content: space-between
+				width: 200px
+				i
+					font-size: 1.5rem
+
+.blog-daddy
+	width: 100%
+	background: $grey-300
+	padding: 50px 0
+
+.cta-blogs
+	@extend %flex-col
+
+	.featured-blogs
+		@extend %flex-row
+		flex-flow: row wrap
+		justify-content: space-between
+		figure
+			flex: 0 1 30%
+			margin: 0
+		figcaption
+			font-size: 1.6rem
+			text-align: center
