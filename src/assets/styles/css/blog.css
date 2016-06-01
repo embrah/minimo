@@ -30,11 +30,11 @@ a {
   text-decoration: none;
   color: #626262; }
 
-.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup {
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -51,11 +51,32 @@ ul {
   max-width: 1200px;
   margin: 0 auto; }
 
-.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup {
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
+  display: flex;
+  flex-flow: row nowrap; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-content {
+  align-items: center; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
+  display: flex;
+  flex-flow: column nowrap; }
+
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -180,3 +201,42 @@ footer {
     font-size: 1.5rem; }
   footer {
     flex-flow: column wrap; } }
+
+img:not(.logo) {
+  width: 100%; }
+
+.post article .blog-gallery {
+  align-self: center;
+  width: 80%; }
+  .post article .blog-gallery .blog-pic {
+    margin: 10px 0; }
+
+.post article .quote {
+  font-style: italic;
+  padding: 0 50px; }
+
+.post article footer {
+  background: none;
+  justify-content: flex-end; }
+  .post article footer .share {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    justify-content: space-between;
+    width: 200px; }
+    .post article footer .share i {
+      font-size: 1.5rem; }
+
+.blog-daddy {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 50px 0; }
+
+.cta-blogs .featured-blogs {
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .cta-blogs .featured-blogs figure {
+    flex: 0 1 30%;
+    margin: 0; }
+  .cta-blogs .featured-blogs figcaption {
+    font-size: 1.6rem;
+    text-align: center; }
