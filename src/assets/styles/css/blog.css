@@ -30,11 +30,11 @@ a {
   text-decoration: none;
   color: #626262; }
 
-.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs, .blog-comments, .blog-comments .social-media {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs, .blog-comments .comment {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -51,11 +51,11 @@ ul {
   max-width: 1200px;
   margin: 0 auto; }
 
-.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs, .blog-comments, .blog-comments .social-media {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs, .blog-comments .comment {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -72,11 +72,11 @@ ul {
   max-width: 1200px;
   margin: 0 auto; }
 
-.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs {
+.main-content, .container, article, .blog-posts, .blog-posts .blog-row .blog, .cta-signup, .post, .post article, .post article .blog-gallery, .cta-blogs, .blog-comments, .blog-comments .social-media {
   display: flex;
   flex-flow: column nowrap; }
 
-header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs {
+header nav, header nav ul, .blog-posts .blog-row, .cta-more, footer, footer .legal, footer .social-media, .post article footer .share, .cta-blogs .featured-blogs, .blog-comments .comment {
   display: flex;
   flex-flow: row nowrap; }
 
@@ -240,3 +240,27 @@ img:not(.logo) {
   .cta-blogs .featured-blogs figcaption {
     font-size: 1.6rem;
     text-align: center; }
+
+.blog-comments {
+  align-items: center; }
+  .blog-comments .comment {
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+    .blog-comments .comment img {
+      width: auto;
+      padding-right: 20px; }
+  .blog-comments .discussion {
+    justify-content: center; }
+    .blog-comments .discussion input {
+      flex: 0 1 64%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      border: 1px solid rgba(0, 0, 0, 0.5); }
+      .blog-comments .discussion input:focus {
+        outline: none; }
+  .blog-comments .social-media {
+    align-items: center; }
+    .blog-comments .social-media i {
+      font-size: 2rem; }
